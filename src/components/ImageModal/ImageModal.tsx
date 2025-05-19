@@ -1,7 +1,6 @@
 import { Image } from '../../types/Image';
 import styles from './ImageModal.module.css';
 import Modal from 'react-modal';
-import { MouseEvent } from 'react';
 
 Modal.setAppElement('#root');
 

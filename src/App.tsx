@@ -82,8 +82,6 @@ function App() {
         {loading && <Loader loading={loading} />}
         {error && <ErrorMessage />}
         {loadMore && !loading && <LoadMoreBtn onClick={loadMoreImages} />}
-        {/* {modalIsOpen && <ImageModal image={selectedImage} closeModal={closeModal} />} */}
-
         <ImageModal image={selectedImage} closeModal={closeModal} />
       </Container>
     </>

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Image } from '../types/Image';
 
 const BASE_URL = 'https://api.unsplash.com';
-const ACCESS_KEY = import.meta.env.VITE_UNSPLASH_KEY;
+const ACCESS_KEY = 'dEMEz_DpVDeOhSxvDLTFrkeN5MzFKm0Q2kTZSlyUKcI';
 
 interface UnsplasResponse {
   total: number;
