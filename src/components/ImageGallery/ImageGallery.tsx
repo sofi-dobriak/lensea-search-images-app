@@ -1,6 +1,5 @@
 import { Image } from '../../types/Image';
 import ImageCard from '../ImageCard/ImageCard';
-import styles from './ImageGallery.module.css';
 
 interface ImageGalleryProps {
   images: Image[];
@@ -9,7 +8,7 @@ interface ImageGalleryProps {
 
 const ImageGallery = ({ images, openModal }: ImageGalleryProps) => {
   return (
-    <ul className={styles.imageList}>
+    <ul className='flex items-center justify-center flex-wrap gap-5 mb-5'>
       {images.map(image => (
         <ImageCard key={image.id} image={image} onClick={() => openModal(image)} />
       ))}

@@ -1,5 +1,4 @@
 import { Image } from '../../types/Image';
-import styles from './ImageModal.module.css';
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
@@ -14,11 +13,15 @@ const ImageModal = ({ closeModal, image }: ImageModalProps) => {
     <Modal
       isOpen={!!image}
       onRequestClose={closeModal}
-      overlayClassName={styles.overlay}
-      className={styles.modal}
+      overlayClassName='fixed inset-0 bg-[var(--modal-bg-color)] flex items-center justify-center'
+      className='rounded-lg'
     >
       {image && (
-        <img className={styles.image} src={image.urls.regular} alt={image.alt_description} />
+        <img
+          className='rounded-lg object-contain'
+          src={image.urls.regular}
+          alt={image.alt_description}
+        />
       )}
     </Modal>
   );

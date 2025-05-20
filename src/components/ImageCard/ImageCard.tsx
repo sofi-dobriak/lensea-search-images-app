@@ -1,5 +1,4 @@
 import { Image } from '../../types/Image';
-import styles from './ImageCard.module.css';
 
 interface ImageCardProps {
   image: Image;
@@ -8,8 +7,15 @@ interface ImageCardProps {
 
 const ImageCard = ({ image, onClick }: ImageCardProps) => {
   return (
-    <li onClick={onClick} className={styles.imageItem}>
-      <img className={styles.image} src={image.urls.small} alt={image.alt_description} />
+    <li
+      onClick={onClick}
+      className='cursor-pointer border border-solid border-transparent duration-[250ms] ease hover:scale-105 hover:border-[var(--hover-border-color)] hover:rounded-lg'
+    >
+      <img
+        className='rounded-md w-[250px] object-cover '
+        src={image.urls.small}
+        alt={image.alt_description}
+      />
     </li>
   );
 };

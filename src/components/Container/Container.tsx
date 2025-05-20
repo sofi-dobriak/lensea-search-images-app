@@ -1,4 +1,3 @@
-import styles from './Container.module.css';
 import { ReactNode } from 'react';
 
 interface ContainerProps {
@@ -6,7 +5,7 @@ interface ContainerProps {
 }
 
 const Container = ({ children }: ContainerProps) => {
-  return <div className={styles.container}>{children}</div>;
+  return <div className='max-w-[1200px] py-0 px-[20px] m-auto mb-[20px]'>{children}</div>;
 };
 
 export default Container;

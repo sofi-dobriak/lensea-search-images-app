@@ -1,5 +1,4 @@
 import { FormEvent, useState } from 'react';
-import styles from './SearchBar.module.css';
 import toast from 'react-hot-toast';
 
 const notify = () => toast.error('Please enter your request');
@@ -15,8 +14,7 @@ const SearchBar = ({ onSearch }: SearchBar) => {
     e.preventDefault();
 
     if (!query.trim()) {
-      notify();
-      return;
+      return notify();
     }
 
     onSearch(query.trim());
@@ -24,10 +22,10 @@ const SearchBar = ({ onSearch }: SearchBar) => {
   };
 
   return (
-    <header className={styles.header}>
-      <form onSubmit={handleSubmit} className={styles.form}>
+    <header className='mt-5 mb-5'>
+      <form onSubmit={handleSubmit} className='flex justify-center gap-[10px]'>
         <input
-          className={styles.input}
+          className='font-[inherit] text-base border border-solid border-[var(--input-border-color)] text-[var(--input-text-color)] rounded-md py-2.5 px-5 w-[100%] max-w-[324px] h-auto bg-transparent duration-250 ease placeholder:font-[inherit] placeholder:text-base hover:outlibe-none hover:border-[var(--hover-border-color)] focus:outline-none focus:border-[var(--hover-border-color)]'
           name='query'
           type='text'
           autoComplete='off'
