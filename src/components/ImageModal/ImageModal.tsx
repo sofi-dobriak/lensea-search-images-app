@@ -13,12 +13,12 @@ const ImageModal = ({ closeModal, image }: ImageModalProps) => {
     <Modal
       isOpen={!!image}
       onRequestClose={closeModal}
-      overlayClassName='fixed inset-0 bg-[var(--modal-bg-color)] flex items-center justify-center'
-      className='rounded-lg'
+      overlayClassName='fixed inset-0 bg-[var(--modal-bg-color)] flex items-center justify-center  border-none'
+      className='rounded-lg  border-none'
     >
       {image && (
         <img
-          className='rounded-lg object-contain'
+          className='rounded-lg object-contain border-none'
           src={image.urls.regular}
           alt={image.alt_description}
         />
