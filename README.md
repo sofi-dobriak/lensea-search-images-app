@@ -34,3 +34,17 @@ A loader is displayed during image loading to enhance the user experience.
 - React
 - Tailwind
 - Image Search API
+
+---
+
+## 💻 My other projects
+
+### 🎬🔍 Movies finder app
+
+[Demo](https://movie-finder-app-three.vercel.app/) |
+[Github](https://github.com/sofi-dobriak/movie-finder-app)
+
+### 💫 Nexus — Phonebook App
+
+[Demo](https://nexus-phonebook-app.vercel.app/) |
+[Github](https://github.com/sofi-dobriak/nexus-phonebook-app)
