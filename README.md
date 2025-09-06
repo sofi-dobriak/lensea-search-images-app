@@ -5,6 +5,8 @@ The user can input search queries, and the app will display relevant images from
 
 🔗 [Live Demo](https://lensea-search-images-ds0kw8wom-sofis-projects-f6b2a04f.vercel.app/)  
 
+---
+
 ### 🧾Key Features:
 
 #### 🔹 **Image Search:**
@@ -32,6 +34,8 @@ Only 12 images are loaded per request. If more images are available, a "Load mor
 #### 🔹 **Loader:**
 
 A loader is displayed during image loading to enhance the user experience.
+
+---
 
 ### 🔗Technologies:
 
