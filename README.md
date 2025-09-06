@@ -3,11 +3,15 @@
 This project allows users to search for images using keywords.
 The user can input search queries, and the app will display relevant images from an external API.
 
+🔗 [Live Demo](https://lensea-search-images-ds0kw8wom-sofis-projects-f6b2a04f.vercel.app/)  
+
 ### 🧾Key Features:
 
 #### 🔹 **Image Search:**
 
 Enter keywords in the input field to search for related images.
+
+![Search image](./public/images-search.png)
 
 #### 🔹 **No Results Message:**
 
@@ -35,6 +39,25 @@ A loader is displayed during image loading to enhance the user experience.
 - Tailwind
 - Image Search API
 
+## 🚀 Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sofi-dobriak/lensea-search-images-app.git
+2. Navigate to the project folder:
+    ```bash
+    cd lensea-search-images-app
+3. Install dependencies:
+    ```bash
+    npm install
+4. Start the development server:
+    ```bash
+    npm run dev
+
+5. Open in your browser:
+    ```bash
+    http://localhost:5173
+
 ---
 
 ## 💻 My other projects
@@ -48,3 +71,7 @@ A loader is displayed during image loading to enhance the user experience.
 
 [Demo](https://nexus-phonebook-app.vercel.app/) |
 [Github](https://github.com/sofi-dobriak/nexus-phonebook-app)
+
+---
+
+👩‍💻 Author: Sofi Dobriak
